@@ -36,7 +36,7 @@ const Uloha5 = () => {
 	return (
 		<>
 			<ul>
-		 		{ polozky.map(polozka=>{return <NakupniPolozka nazev ={polozka}/> })} 
+		 		{ polozky.map(polozka=>{return <NakupniPolozka nazev ={polozka} key={polozka}/> })} 
 		 	</ul>
 		</>
 	)
