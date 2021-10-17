@@ -9,16 +9,11 @@ import React from 'react'
 
 const ZaverecnyBonus2 = () => {
 	const handleClick = (event) => {
-		confirm("Chcete naozaj prejst na novu stranku a stratit rozpracovane odpovede?");
-		event.preventDefault();
-		
-	
+		if(!confirm("Chcete naozaj prejst na novu stranku a stratit rozpracovane odpovede?"))
+			event.preventDefault();
 	}
 
-	
-
 	return (
-		
 		<>
 			Odkaz: <a onClick={handleClick} href="https://www.czechitas.cz/">www.czechitas.cz</a>
 			<hr />
