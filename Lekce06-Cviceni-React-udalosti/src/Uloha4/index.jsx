@@ -12,15 +12,27 @@ import React from 'react'
 
 
 const Pozdrav = ({ jmenoVeCtvrtemPade, jmenoVPatemPade }) => {
-	return <button>@TODO</button>
+	const handleClick = (jmenoVPatemPade)=>{
+		alert("Ahoj " + jmenoVPatemPade);
+
+	}
+	return <button onClick={() => handleClick(jmenoVPatemPade)}> „Pozdrav {jmenoVeCtvrtemPade}" </button>
 }
+
 
 // Zadání 3:
 // Do komponenty `Uloha4` přidej ještě dvě použití komponenty `Pozdrav`.
 // Jednou s tvým jménem a jednou se jménem kouče.
 
 const Uloha4 = () => {
-	return <Pozdrav jmenoVeCtvrtemPade="Luďka" jmenoVPatemPade="Luďku" />
+	
+	return (
+		<>
+			 <Pozdrav jmenoVeCtvrtemPade="Luďka" jmenoVPatemPade="Luďku" />
+			 <Pozdrav jmenoVeCtvrtemPade="Basku" jmenoVPatemPade="Baska" />
+			 <Pozdrav jmenoVeCtvrtemPade="Tomase" jmenoVPatemPade="Tomas"/>
+		</>
+		)
 }
 
 export default Uloha4;
