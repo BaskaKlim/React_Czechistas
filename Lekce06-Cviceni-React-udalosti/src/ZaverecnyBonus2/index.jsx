@@ -8,9 +8,19 @@ import React from 'react'
 // Pokud otázku nepotvrdí, zamez přesměrování pomocí `event.preventDefault()`.
 
 const ZaverecnyBonus2 = () => {
+	const handleClick = (event) => {
+		confirm("Chcete naozaj prejst na novu stranku a stratit rozpracovane odpovede?");
+		event.preventDefault();
+		
+	
+	}
+
+	
+
 	return (
+		
 		<>
-			Odkaz: <a href="https://www.czechitas.cz/">www.czechitas.cz</a>
+			Odkaz: <a onClick={handleClick} href="https://www.czechitas.cz/">www.czechitas.cz</a>
 			<hr />
 			Super složitý formulář:
 			<form>
