@@ -10,7 +10,18 @@ import React from 'react'
 
 
 const NakupniPolozka = ({ nazev }) => {
-	return <div>@TODO</div>
+
+	const handleClick = () =>{
+		console.log("Uživatel chce koupit " + nazev);
+	}
+	return (
+		<>
+		 <div>
+			 <h3>{nazev} </h3>
+			 <button onClick={handleClick}> koupit </button>
+		 </div>
+		 </>
+		)
 }
 
 
@@ -24,8 +35,9 @@ const Uloha5 = () => {
 
 	return (
 		<>
-			<NakupniPolozka nazev="hrušky" />
-			<NakupniPolozka nazev="jablka" />
+			<ul>
+		 		{ polozky.map(polozka=>{return <NakupniPolozka nazev ={polozka}/> })} 
+		 	</ul>
 		</>
 	)
 }
