@@ -7,7 +7,15 @@ import hradUrl from './hrad.svg'
 // Bublina = alert v prohlížeči.
 
 const Uloha2 = () => {
-	return <img src={hradUrl} width={60} height={60} alt="hrad" />
+	const onMouseEnter = () =>{
+		alert("Na hradě je myš!");
+
+	}
+	return (
+	<>
+		<img src={hradUrl} width={60} height={60} alt="hrad" onMouseMove={onMouseEnter}/>
+	</>
+	);
 }
 
 export default Uloha2;
