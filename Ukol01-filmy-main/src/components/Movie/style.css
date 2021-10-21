@@ -1,5 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-
-* {
-  box-sizing: border-box;
+.movie { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr  1fr; 
+  grid-template-rows: 1fr ; 
+  gap: 0px 0px;   
+  background-color: white;
+  grid-template-areas: "overlap";
+} 
+  
+.moviePoster{
+    grid-area: overlap;
+    
 }
+
+.movieRating{
+    text-align: center;
+    grid-area: overlap;
+    background-color: rgb(255, 184, 51);
+    height: 20px;
+    width: 80px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.description { 
+    margin-top: 10px;
+    column-span: 2;
+    font-size: 13px;
+} 
+      
+  
+p{
+    margin: 0px;
+  }
+  
+h2{
+    margin-top: 0px;
+    margin-bottom: 0.5px;
+    color: rgb(219, 59, 10);
+  }
+
+h3{
+    color: rgb(219, 59, 10);
+    margin: 0px;
+  }
+  
+   
+  

@@ -1,13 +1,15 @@
 import React from "react";
-//import './style.css';
+import './style.css';
 
 
 export const Role = (props) => {   
     return (
-        <div className="role">
-            <h4>{props.actor} </h4>
-            <p> as {props.role}</p>
+        <>
+        <div className="cast">
+            <p className="actorName">{props.actor} </p>
+            <p className="role"> as {props.role}</p>
         </div>
+        </>
     )
 };
 

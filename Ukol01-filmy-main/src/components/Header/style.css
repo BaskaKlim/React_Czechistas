@@ -1,0 +1,20 @@
+
+.header{
+    border-radius: 25px;
+    font-weight: bolder;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.logo {
+    display: inline-block;
+    width: auto;
+    height: 1em;
+    margin-right: 0.3em;
+    
+  }
+  
+  h1{
+    text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+  }
