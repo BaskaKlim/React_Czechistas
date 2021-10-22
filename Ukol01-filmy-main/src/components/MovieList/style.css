@@ -1,9 +1,9 @@
-div.movieList{
-  display: grid; 
-  grid-template-columns: 1fr 1fr; 
-  grid-template-rows: 1fr; 
-  align-items: center;
-  justify-content: center;
-  -webkit-box-shadow: 5px 5px 32px 5px rgba(0,0,0,0.43); 
-  box-shadow: 5px 5px 32px 5px rgba(0,0,0,0.43);
-}
+.movieList{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    justify-items: stretch;
+    align-items: stretch;
+  }
