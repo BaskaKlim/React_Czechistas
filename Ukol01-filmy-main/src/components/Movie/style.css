@@ -1,23 +1,25 @@
 .movie { 
   display: grid; 
+  grid-template-areas: "overlap";
   grid-template-columns: 1fr 1fr; 
   grid-template-rows: 1fr; 
   gap: 0px 0px;   
-  border: 1px solid #ccc;
-  background-color: white;
-  grid-template-areas: "overlap";
-  } 
-  
-.movie:hover{
+  background-color: rgb(255, 255, 255);
   border: 1px solid rgb(10, 10, 10);
-}
+  } 
 
 .moviePoster{
-   column-span: 1;
+  column-span: 1;
    width: 100%;
-   grid-area: overlap;
+   grid-area:overlap;
   
-  
+}
+.poster{
+  width: 140px;
+  height: 200px;
+  margin: 30px;
+  border-radius: 10px;
+
 }
   
 .movieRating{  
@@ -32,20 +34,12 @@
   
     }
 
-  .description { 
-    margin-top: 10px;
-    column-span: 2;
+.description { 
+  margin-top: 10px;
+  column-span: 2;
   font-size: 13px;
 
-  } 
-  
-  .img{
-    width: 180px;
-    height:240px;
-    margin: 10px;
-}
-
-
+  }
 
   p{
       margin: 0px;
@@ -54,10 +48,11 @@
   h2{
       margin-top: 0px;
       margin-bottom: 0.5px;
-      color: red;
+      color: rgba(236, 99, 35, 0.87);
   }
 
   h3{
-      color: red;
+    
+      color: rgba(236, 99, 35, 0.87);
       margin: 0px;
   }
