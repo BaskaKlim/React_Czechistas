@@ -1,36 +1,13 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap');
-
-:root {
-  --primary-color: #b8b8bb;
-}
-
-html {
-  font-family: 'Open Sans', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 * {
   box-sizing: border-box;
 }
 
-.header{
-    border-radius: 25px;
-    font-size: 17px;
-    font-weight: bolder;
-    text-align: center;
-    padding: 5px;
-    font-family: 'Nanum Gothic', sans-serif;
-    padding: 0 20px;
-    box-sizing: border-box;
+html {
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgb(202, 195, 184);
 }
-
-.logo {
-  display: inline-block;
-  width: auto;
-  height: 1em;
-  margin-right: 0.3em;
-}
-
 
 
 
